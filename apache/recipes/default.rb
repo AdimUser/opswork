@@ -4,11 +4,11 @@
 #
 # Copyright:: 2017, The Authors, All Rights Reserved.
 
-package "httpd.x86_64" do
+package 'httpd.x86_64' do
   action :install
 end
 
-service httpd do
+service 'httpd' do
   action [ :enable, :start ]
 end
 
