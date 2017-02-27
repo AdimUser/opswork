@@ -9,7 +9,7 @@ package "httpd.x86_64" do
 end
 
 service httpd do
-  action :enable :start
+  action [ :enable, :start ]
 end
 
 file '/var/www/html/index.html' do
